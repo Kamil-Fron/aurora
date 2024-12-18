@@ -12,8 +12,8 @@ function zwiazek_chemikow_setup()
 
     // Rejestracja menu
     register_nav_menus(array(
-        'primary' => __('Menu główne', 'zwiazek-chemikow'),
-        'footer' => __('Menu w stopce', 'zwiazek-chemikow')
+        'primary' => __('Menu główne', 'aurora'),
+        'footer' => __('Menu w stopce', 'aurora')
     ));
 }
 add_action('after_setup_theme', 'zwiazek_chemikow_setup');
