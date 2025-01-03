@@ -1,0 +1,30 @@
+/* assets/css/variables.css */
+:root {
+    /* Kolory podstawowe */
+    --color-primary: #1a4b8c;     /* Główny kolor związku */
+    --color-secondary: #e63946;   /* Kolor akcentujący */
+    --color-text: #333333;        /* Podstawowy kolor tekstu */
+    --color-text-light: #666666;  /* Jaśniejszy tekst */
+    --color-background: #ffffff;  /* Tło strony */
+    --color-gray-light: #f8f9fa; /* Jasne tło sekcji */
+
+    /* Typografia */
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* Border radius */
+    --border-radius: 4px;
+    --border-radius-lg: 8px;
+
+    /* Box shadow */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,65 @@
+/* assets/css/forms.css */
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(26, 75, 140, 0.1);
+}
+
+/* Document styles */
+.document-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.document-icon {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.document-info {
+    flex-grow: 1;
+}
+
+.document-title {
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+}
+
+.document-meta {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+.document-download {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-size: 0.9rem;
+}

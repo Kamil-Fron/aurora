@@ -58,3 +58,44 @@ function zwiazek_chemikow_scripts()
     wp_enqueue_script('zwiazek-chemikow-script', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'zwiazek_chemikow_scripts');
+
+// functions.php - dodaj na końcu pliku
+
+// Rejestracja Custom Post Type dla członków
+function zwiazek_chemikow_register_member_post_type()
+{
+    register_post_type('member', array(
+        'labels' => array(
+            'name' => 'Członkowie',
+            'singular_name' => 'Członek',
+            'add_new' => 'Dodaj nowego członka',
+            'add_new_item' => 'Dodaj nowego członka',
+            'edit_item' => 'Edytuj członka',
+        ),
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'czlonkowie'),
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'menu_icon' => 'dashicons-groups'
+    ));
+
+    // Dodanie Custom Fields dla członków
+    register_post_meta('member', 'member_id', array(
+        'type' => 'string',
+        'single' => true,
+        'show_in_rest' => true
+    ));
+    register_post_meta('member', 'phone', array(
+        'type' => 'string',
+        'single' => true,
+        'show_in_rest' => true
+    ));
+    register_post_meta('member', 'department', array(
+        'type' => 'string',
+        'single' => true,
+        'show_in_rest' => true
+    ));
+}
+add_action('init', 'zwiazek_chemikow_register_member_post_type');
